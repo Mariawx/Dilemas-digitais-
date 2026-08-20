@@ -1,0 +1,186 @@
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Paleta de Cores Solicitada */
+:root {
+    --creme: #FDFBF7;
+    --marrom-claro: #C2A88D;
+    --marrom-escuro: #8B7355;
+    --roxo: #7A5C9B;
+    --azul: #5B7B9E;
+    --rosa: #D48C9E;
+    --gradiente-principal: linear-gradient(135deg, var(--roxo), var(--azul), var(--rosa));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--creme);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    color: var(--roxo);
+    font-size: 24px;
+}
+
+.logo span {
+    color: var(--azul);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--marrom-escuro);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--rosa);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--gradiente-principal);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--creme);
+    color: var(--roxo);
+}
+
+.btn-secondary {
+    background-color: var(--marrom-claro);
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Seções de Conteúdo */
+.content-section, .solution-section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h2, .solution-section h2, .cards-section h2 {
+    color: var(--roxo);
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Cards (Sinais de Alerta) */
+.cards-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--creme);
+    border-top: 4px solid var(--rosa);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+
+/* Solução */
+.solution-steps {
+    list-style: none;
+    text-align: left;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.solution-steps li {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--marrom-claro);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--marrom-escuro);
+    color: var(--creme);
+    text-align: center;
+    padding: 20px;
+}
